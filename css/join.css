@@ -1,0 +1,297 @@
+.join_form {
+  margin-top: 0px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+legend {
+  margin: 0px auto;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.join_box {
+  margin: 25px auto 0;
+  width: 450px;
+}
+
+.join_box > div {
+  margin-bottom: 5px;
+}
+
+.join_box > div > label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.join_namewrap,
+.join_pwdwrap,
+.join_repwdwrap,
+.join_mobilewrap,
+.join_addrwrap,
+.join_emailwrap,
+.join_birthwrap {
+  width: 450px;
+  height: 110px;
+  margin: auto;
+}
+
+.u_name,
+.pwd,
+.repwd,
+.birth {
+  border: 1px solid black;
+  height: 50px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/*아이디*/
+.join_idwrap {
+  width: 450px;
+  height: 110px;
+  margin-left: 6px;
+  margin: auto;
+}
+
+.join_idwrap > p {
+  margin: 0 auto 5px;
+  height: 50px;
+}
+
+.u_id {
+  border: 1px solid black;
+  height: 50px;
+  width: 350px;
+  display: block;
+  margin: auto;
+  float: left;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.id_search {
+  border: 1px solid black;
+  width: 94px;
+  height: 50px;
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/*주소*/
+.join_addrwrap {
+  width: 450px;
+  height: 216px;
+  margin: auto;
+}
+.pscode {
+  border: 1px solid black;
+  height: 50px;
+  width: 350px;
+  display: block;
+  margin: 0 auto 3px;
+  float: left;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-left: 6px;
+}
+
+.addr_search {
+  border: 1px solid black;
+  width: 94px;
+  height: 50px;
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.addr_1,
+.addr_2 {
+  border: 1px solid black;
+  width: 100%;
+  height: 50px;
+  padding-left: 6px;
+  margin: 0 auto 3px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.addr_2 {
+  margin-bottom: 3px;
+}
+
+/*이메일*/
+.join_emailwrap {
+  width: 450px;
+  height: 110px;
+  margin: auto;
+}
+
+.join_emailwrap > p {
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+#email_id {
+  border: 1px solid black;
+  height: 50px;
+  width: 184px;
+  font-size: 16px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.email_txt {
+  display: block;
+  float: left;
+  margin: 17px 5px 0;
+}
+
+#email_dns {
+  border: 1px solid black;
+  height: 50px;
+  width: 134px;
+  font-size: 16px;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 6px;
+}
+
+#email_sel {
+  border: 1px solid black;
+  height: 50px;
+  width: 100px;
+  box-sizing: border-box;
+  float: left;
+}
+
+/*휴대폰*/
+.join_mobilewrap {
+  width: 450px;
+  margin: auto;
+}
+
+.mobile_box1,
+.mobile_box2,
+.mobile_box3 {
+  display: block;
+  border: 1px solid black;
+  width: 130px;
+  height: 50px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.join_mobilewrap > p {
+  height: 50px;
+}
+
+.mobile_box1 {
+  float: left;
+}
+
+.mobile_text1,
+.mobile_text2 {
+  float: left;
+  margin: 17px 11px 0;
+}
+
+.mobile_box2 {
+  float: left;
+}
+
+.mobile_box3 {
+  float: left;
+}
+
+/*동의사항*/
+.ag_wrap {
+  margin: 10px auto 0;
+  width: 380px;
+}
+
+.ag_wrap > div {
+  margin-bottom: 12px;
+}
+
+/*가입 버튼*/
+
+.joinbutton_wrap {
+  margin-top: 50px;
+}
+
+.join_member {
+  font-size: inherit;
+  display: block;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  margin: 0 auto 40px;
+  line-height: 55px;
+  width: 270px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.join_member:hover {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+.err_txt {
+  display: block;
+  color: red;
+  font-size: 15px;
+  margin-top: 7px;
+  margin-left: 3px;
+}
+
+/*생년월일*/
+#year,
+#month,
+#date {
+  border: 1px solid black;
+  height: 50px;
+  width: 31%;
+}
+
+#month {
+  margin: 0 10px;
+}
+
+/* 성별 */
+.join_genderwrap {
+  width: 450px;
+  height: 75px;
+  margin: auto;
+}
+
+.join_genderwrap p {
+  width: 80%;
+  margin: auto;
+}
+
+.male,
+.female {
+  width: 39%;
+  padding: 0 19px;
+  float: left;
+}
+
+.male {
+  margin-right: 10px;
+  text-align: right;
+}
+
+.female {
+  text-align: left;
+}

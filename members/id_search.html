@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 중복 검색</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap");
+        body {
+        font-family: "Noto Sans KR", sans-serif;
+        color: #222222;
+        }
+        form{
+            width:400px;
+            height:300px;
+            border: 1px solid rgb(165, 165, 165);
+            box-sizing: border-box;
+        }
+        legend{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(181, 181, 181);
+            line-height: 51px;
+            text-align: center;
+        }
+        form span:first-child{
+            text-align: center;
+            margin-top: 58px;
+            display: block;
+        }
+        .err_txt{
+            text-align: center;
+            margin-top: 18px;
+            display: block;
+            color:red;
+        }
+        .id_search_box{
+            width: 80%;
+            display: flex;
+            margin: 27px auto 0;
+        }
+        #user_id{
+            width: 70%;
+            height:30px;
+            border: 1px solid black;
+        }
+        .id_search_box button{
+            width: 30%;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .id_search_box button:hover{
+            background-color: rgb(183, 183, 183);
+        }
+    </style>
+    <script type="text/javascript">
+        function form_check() {
+            let user_id = document.getElementById("user_id");
+            if (user_id.value == "") {
+                let txt = document.getElementById("err_id");
+                txt.textContent = "아이디를 입력하세요.";
+                user_id.focus();
+                return false;
+            }
+            let id_reg=/^[A-Za-z0-9]{5,15}$/;
+            if(!id_reg.test(user_id.value)){
+                let txt = document.getElementById("err_id");
+                txt.textContent = "아이디는 영문,숫자 5~15자리만 입력할 수 있습니다.";
+                user_id.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="id_search_form" action="id_search_result.php" method="post" onsubmit="return form_check()"> 
+        <fieldset>
+            <legend>아이디 중복 확인</legend>
+            <p>
+                <span>아이디는 5~15글자 이내로 입력해 주세요</span></br>
+                <div class="id_search_box">
+                    <input type="text" name="user_id" id="user_id">
+                    <button type="submit">검색</button>
+                </div>
+                <span id="err_id" class="err_txt"></span>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

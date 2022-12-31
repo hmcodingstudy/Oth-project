@@ -1,0 +1,549 @@
+/*main slider*/
+.main_img {
+  width: 100%;
+  height: 100%;
+  margin: 20px auto 0;
+}
+
+/*products*/
+.slider_wrap {
+  height: auto;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.slider {
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.pdt_txt {
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+
+.pdt_txt_head {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.pdt_txt_head h2 {
+  background: url(../images/products_logo.png) no-repeat;
+  text-indent: -9999px;
+  width: 121px;
+  height: 33px;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 15%;
+  top: 95%;
+}
+
+.pdt_txt_head a {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 6%;
+  top: 95%;
+  background: url(../images/plus.png);
+  text-indent: -9999px;
+}
+
+.pdt_txt_head a:hover {
+  transform: rotate(45deg);
+  transition: 0.3s ease-in-out;
+}
+
+.pdt_txt span {
+  line-height: 22px;
+  font-size: 15px;
+  display: block;
+  width: 80%;
+  position: absolute;
+  left: 13%;
+  top: 22%;
+}
+
+.pdt_container {
+  width: 75%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.container_1,
+.container_2,
+.container_3,
+.container_4,
+.container_5,
+.container_6 {
+  height: 340px;
+  text-indent: -9999px;
+}
+
+.container_1 a,
+.container_2 a,
+.container_3 a,
+.container_4 a,
+.container_5 a,
+.container_6 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container_1:hover,
+.container_2:hover,
+.container_3:hover,
+.container_4:hover,
+.container_5:hover,
+.container_6:hover,
+.container_7:hover {
+  opacity: 0.7;
+}
+
+.container_1 {
+  background: url(../images/pdt1.jpg) no-repeat;
+}
+
+.container_2 {
+  background: url(../images/pdt2.jpg) no-repeat;
+}
+
+.container_3 {
+  background: url(../images/pdt3.jpg) no-repeat;
+}
+
+.container_4 {
+  background: url(../images/pdt4.jpg) no-repeat;
+}
+
+.container_5 {
+  background: url(../images/pdt5.jpg) no-repeat;
+}
+
+.container_6 {
+  background: url(../images/pdt6.jpg) no-repeat;
+}
+
+/*detail*/
+.main_detail_wrap {
+  width: 100%;
+  height: 440px;
+  background: black;
+  margin-top: 20px;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.main_detail {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.detail_img {
+  width: 200px;
+  height: 250px;
+  background: url(../images/pdt_detail_img.png) no-repeat;
+  text-indent: -9999px;
+  position: absolute;
+  margin-top: 90px;
+  opacity: 0.5;
+  transition: 1s;
+  margin-left: 10%;
+  transition: all 0.5s;
+}
+
+.detail_txt_wrap {
+  position: absolute;
+  width: 613px;
+  height: 250px;
+  color: rgb(156, 156, 156);
+  margin-top: 112px;
+  font-size: 18px;
+  line-height: 28px;
+  transition: 1.5s;
+  opacity: 0.5;
+}
+
+/*더보기 버튼*/
+.btn_wrap {
+  width: 45%;
+  margin-left: 52%;
+}
+
+.detail_btn {
+  position: absolute;
+  background: black;
+  width: 228px;
+  height: 57px;
+  font-size: 18px;
+  color: rgb(156, 156, 156);
+  margin-top: 276px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 2s;
+  opacity: 0.5;
+}
+
+.detail_btn:hover {
+  background-color: rgb(156, 156, 156);
+  color: white;
+  transition: 0.2s linear;
+}
+
+/*rotate text*/
+.rotate_text_box {
+  padding-top: 110px;
+  padding-bottom: 50px;
+  background-color: black;
+  width: 100%;
+  height: 700px;
+}
+
+.rotate_text {
+  width: 304px;
+  height: 304px;
+  margin: auto;
+  display: block;
+  animation: rotate_text 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+.rotate_text_box > div {
+  color: white;
+  text-align: center;
+  opacity: 70%;
+  line-height: 25px;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+@keyframes rotate_text {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*비디오*/
+.video_wrap {
+  position: relative;
+  width: 100%;
+}
+
+.index_video {
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 0 0 300px 0;
+  background-color: black;
+}
+
+/*video detail*/
+.video_detail_wrap {
+  background-color: black;
+  top: 550px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  opacity: 70%;
+  line-height: 25px;
+}
+
+.video_detail {
+  width: 895px;
+  height: 57px;
+  margin: auto;
+  border-bottom: 1px solid white;
+}
+
+.video_detail > div {
+  float: left;
+  color: white;
+  font-size: 23px;
+  margin-top: 18px;
+  margin-left: 5px;
+  font-family: "Times New Roman", "Times Roman", times, serif;
+}
+
+.video_detail > a {
+  width: 120px;
+  height: 34px;
+  float: right;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid white;
+  line-height: 32px;
+  margin-right: 5px;
+}
+
+.video_detail > a:hover {
+  background-color: rgb(156, 156, 156);
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.video_detail_wrap > span {
+  display: block;
+  color: white;
+  width: 895px;
+  margin: 14px auto 0;
+  text-align: justify;
+}
+
+/*Offline Store map,list*/
+.shoplist_wrap {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  height: 700px;
+  margin-top: 25px;
+}
+
+.shoplist_wrap h2 {
+  font-size: 33px;
+  font-weight: bold;
+  margin: 40px auto 0;
+  width: 239px;
+  height: 31px;
+  background: url(../images/offline_store_logo.png) no-repeat;
+  text-indent: -9999px;
+}
+
+/*map*/
+.shoplist_wrap {
+  width: 1000px;
+  margin: auto;
+}
+
+.shoplist_wrap h2 {
+  margin-bottom: 35px;
+}
+
+#map {
+  width: 65%;
+  height: 500px;
+  background-color: black;
+  float: left;
+  margin-right: 50px;
+}
+
+.map_wrap {
+  width: 100%;
+  display: flex;
+}
+
+.location_list {
+  width: 30%;
+  /* height: 500px; */
+  height: auto;
+  float: left;
+  background-color: white;
+  border: 1px solid rgb(190, 190, 190);
+  border-right: none;
+  border-left: none;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+
+.location_list h3 {
+  background-color: rgb(250, 250, 250);
+  border-bottom: 1px solid rgb(190, 190, 190);
+  height: 40px;
+  line-height: 41px;
+  color: rgb(94, 94, 94);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Times New Roman", "Times Roman", times, serif;
+}
+
+.shop_list1,
+.shop_list2,
+.shop_list3 {
+  border-bottom: 1px solid rgb(190, 190, 190);
+  padding: 15px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 21px;
+  height: 71px;
+}
+
+.shop_list1:hover,
+.shop_list2:hover,
+.shop_list3:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.location_list li h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(34, 34, 34);
+}
+
+.location_list li div {
+  color: rgb(85, 85, 85);
+}
+
+/* .location_list li div:first-child {
+  margin-bottom: 5px;
+} */
+
+#shop_location1,
+#shop_location2,
+#shop_location3 {
+  cursor: pointer;
+}
+
+/*mediaQuery*/
+@media (max-width: 860px) {
+  .slider {
+    flex-direction: column-reverse;
+    height: 608px;
+  }
+
+  .pdt_container {
+    width: 100%;
+    height: 80%;
+    padding: 20px 20px;
+  }
+
+  .pdt_txt {
+    width: 100%;
+    height: 38%;
+    margin-bottom: 30px;
+  }
+
+  .pdt_txt_head {
+    margin-bottom: 0;
+    width: 80%;
+    margin: auto;
+  }
+
+  .pdt_txt span {
+    top: 0px;
+    margin: auto;
+    width: 80%;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .pdt_txt_head {
+    width: 90%;
+  }
+
+  .pdt_txt span {
+    width: 90%;
+  }
+
+  .pdt_txt_head h2 {
+    left: 0;
+    top: 0;
+  }
+
+  .pdt_txt_head a {
+    right: 0;
+    top: 0;
+  }
+
+  .main_detail_wrap {
+    height: auto;
+    opacity: 1;
+  }
+
+  .main_detail {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+  }
+
+  .detail_img {
+    margin: 50px auto 0;
+    position: unset;
+    opacity: 1;
+  }
+
+  .detail_txt_wrap {
+    margin: 30px auto 20px;
+    position: unset;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+
+  .main_detail a {
+    width: 228px;
+    margin: auto;
+  }
+
+  .detail_btn {
+    margin: auto;
+    position: unset;
+    opacity: 1;
+  }
+
+  .btn_wrap {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+  }
+
+  .btn_wrap a {
+    display: block;
+    margin: auto;
+  }
+
+  /*rotate text*/
+  .rotate_text_box > div {
+    width: 80%;
+    margin: 30px auto 0;
+  }
+
+  .video_detail {
+    width: 94%;
+  }
+
+  .video_detail_wrap > span {
+    width: 93%;
+    margin: 14px auto 0;
+  }
+
+  .map_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #map {
+    width: 90%;
+    margin: 0px;
+  }
+
+  .location_list {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .shoplist_wrap {
+    width: 100%;
+    height: auto;
+  }
+
+  .shop_list1,
+  .shop_list2,
+  .shop_list3 {
+    height: 77px;
+  }
+}

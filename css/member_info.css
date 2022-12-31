@@ -1,0 +1,374 @@
+/*admin_common*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap");
+body {
+  height: 1000px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #222222;
+}
+
+.screen {
+  width: 81%;
+  float: right;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(236, 236, 236);
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+/* nav */
+.nav {
+  background-color: white;
+  width: 19%;
+  height: 100%;
+  border-right: 1px solid black;
+  padding: 25px;
+  float: left;
+  box-sizing: border-box;
+  min-width: 200px;
+}
+
+.header_logo {
+  display: block;
+  width: 61px;
+  height: 28px;
+  background: url(../images/logo.png) no-repeat;
+  text-indent: -9999px;
+  margin-bottom: 30px;
+}
+
+.go_homepage,
+.menu > li {
+  height: 45px;
+  padding-left: 10px;
+  line-height: 43px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.go_homepage {
+  margin: 80px 0 60px;
+}
+
+.go_homepage > i {
+  margin-right: 7px;
+}
+
+.menu > li {
+  margin-bottom: 10px;
+}
+
+.go_homepage:hover,
+.menu > li:hover {
+  box-shadow: 1px 1px 5px 3px rgb(230, 230, 230);
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.menu > li span {
+  margin-left: 10px;
+}
+
+/*member_info*/
+.edit_form {
+  width: 900px;
+  height: 900px;
+  margin: 30px auto 0;
+  font-size: 16px;
+}
+
+.edit_form h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.edit_form fieldset {
+  padding: 35px;
+}
+
+.mypage_col1 {
+  float: left;
+  width: 380px;
+}
+
+.mypage_col1 div span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.mypage_col1 button {
+  width: 75px;
+  height: 43px;
+  margin-right: 5px;
+}
+
+.mypage_emailwrap,
+.mypage_namewrap,
+.mypage_idwrap,
+.mypage_pwdwrap,
+.mypage_phonewrap,
+.mypage_couponwrap,
+.mypage_birthwrap,
+.mypage_addresswrap {
+  margin-bottom: 27px;
+}
+
+.mypage_idwrap_box,
+.mypage_pwdwrap_box,
+.mypage_namewrap_box,
+.mypage_birthwrap_box {
+  border: 1px solid #222;
+  height: 40px;
+  width: 370px;
+  display: block;
+  margin: auto;
+}
+
+.mypage_phonewrap_box1,
+.mypage_phonewrap_box2,
+.mypage_phonewrap_box3 {
+  display: block;
+  border: 1px solid #222;
+  width: 101px;
+  height: 40px;
+  margin: auto;
+}
+
+.mypage_phonewrap > p {
+  height: 40px;
+}
+
+.mypage_phonewrap_box1 {
+  float: left;
+}
+
+.mypage_phonewrap_text1 {
+  float: left;
+  margin: 10px 10px 0;
+}
+
+.mypage_phonewrap_box2 {
+  float: left;
+}
+
+.mypage_phonewrap_text2 {
+  float: left;
+  margin: 10px 10px 0;
+}
+
+.mypage_phonewrap_box3 {
+  float: left;
+}
+
+/*email*/
+.mypage_emailwrap p {
+  display: flex;
+}
+
+#email_id {
+  display: block;
+  border: 1px solid #222;
+  width: 141px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+#email_dns {
+  display: block;
+  border: 1px solid #222;
+  width: 100px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+#email_sel {
+  border: 1px solid #222;
+  width: 90px;
+}
+
+.email_txt {
+  line-height: 34px;
+}
+
+/*address*/
+.mypage_addresswrap_box {
+  display: block;
+  border: 1px solid #222;
+  width: 130px;
+  height: 40px;
+  margin: 0 auto 5px;
+  float: left;
+}
+
+.mypage_addresswrap {
+  height: 169px;
+}
+
+.mypage_addresswrap button {
+  float: right;
+  background: white;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+
+.mypage_addresswrap button:hover {
+  background: rgb(197, 197, 197);
+}
+
+.mypage_addresswrap_box2 {
+  display: block;
+  border: 1px solid #222;
+  width: 370px;
+  height: 40px;
+  margin: auto;
+  float: left;
+}
+
+.mypage_addresswrap p div {
+  display: flex;
+}
+
+.addr_1 {
+  border: 1px solid #222;
+  width: 290px;
+  height: 40px;
+  margin: 0 auto 5px;
+}
+
+/* 성별 */
+.mypage_genderwrap {
+  height: 70px;
+  margin: 0 auto 30px;
+}
+
+.mypage_genderwrap p {
+  width: 80%;
+  margin: auto;
+}
+
+.male,
+.female {
+  width: 37%;
+  padding: 0 19px;
+  float: left;
+}
+
+.male {
+  margin-right: 10px;
+  text-align: right;
+}
+
+.female {
+  text-align: left;
+}
+
+/*column 2*/
+.mypage_col2 {
+  float: right;
+  width: 380px;
+  height: 800px;
+}
+
+.mypage_col2 table {
+  width: 100%;
+  text-align: center;
+}
+
+.mypage_col2 th,
+td {
+  font-size: 15px;
+}
+
+.orderlist,
+.mypost,
+.point {
+  margin-bottom: 100px;
+}
+
+.orderlist_row1 {
+  line-height: 35px;
+  border-bottom: 1px solid #222;
+}
+
+.orderlist_col1 {
+  width: 172px;
+}
+
+.orderlist_row2 {
+  height: 50px;
+  padding-top: 10px;
+  line-height: 35px;
+}
+
+.orderlist_col2 {
+  width: 45px;
+  text-align: center;
+}
+
+.orderlist_col3 {
+  width: 87px;
+}
+
+/*적립금내역*/
+.point tr:first-child {
+  border-bottom: 1px solid #222;
+  padding-bottom: 10px;
+}
+
+.point_row1 {
+  line-height: 35px;
+}
+
+.point_row2 {
+  height: 30px;
+  line-height: 35px;
+}
+
+.mypost {
+  width: 380px;
+  height: 153px;
+}
+
+.mypost > p {
+  text-align: center;
+  margin-top: 65px;
+}
+
+/*버튼*/
+.member_info_change_wrap {
+  margin: auto;
+  width: 230px;
+}
+
+.change_btn {
+  background-color: black;
+  color: white;
+  width: 110px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.delete_btn {
+  background-color: white;
+  color: black;
+  width: 110px;
+  height: 40px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.change_btn:hover {
+  background-color: rgb(77, 77, 77);
+}
+
+.delete_btn:hover {
+  background-color: rgb(211, 211, 211);
+}
